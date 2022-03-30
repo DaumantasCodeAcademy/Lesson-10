@@ -1,0 +1,46 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "lesson 10/1.0.0": {
+        "runtime": {
+          "lesson 10.dll": {}
+        }
+      },
+      "lesson 10.Business/1.0.0": {
+        "runtime": {
+          "lesson 10.Business.dll": {}
+        }
+      },
+      "lesson 10.DataAccess/1.0.0": {
+        "dependencies": {
+          "lesson 10.Business": "1.0.0"
+        },
+        "runtime": {
+          "lesson 10.DataAccess.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lesson 10/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "lesson 10.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "lesson 10.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
