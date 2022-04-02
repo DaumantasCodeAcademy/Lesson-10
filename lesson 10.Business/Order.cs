@@ -8,9 +8,9 @@ namespace lesson_10.Business
 {
     public class Order
     {
-        public List<OrderProduct> OrderProducts { get; }
         public DateTime OrderDate { get; }
         public string ShippingAdress { get; }
+        public List<OrderProduct> OrderProducts { get; }
         
         public Order(DateTime orderDate, string shippingAdress, List<OrderProduct> orderProducts)
         {
