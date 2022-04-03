@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace lesson_10.Business
+﻿namespace lesson_10.Business
 {
     public class Product
     {

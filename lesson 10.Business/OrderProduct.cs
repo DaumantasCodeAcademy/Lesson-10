@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace lesson_10.Business
+﻿namespace lesson_10.Business
 {
     public class OrderProduct
     {
