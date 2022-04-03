@@ -11,9 +11,8 @@ namespace lesson_10.DataAccess
     {
         public List<OrderProduct> Retrieve()
         {
-            ProductRepository getProducts = new ProductRepository();
-            List<Product> products = getProducts.Retrieve();
-
+            ProductRepository prodRep = new ProductRepository();
+            List<Product> products = prodRep.Retrieve();
 
             List<OrderProduct> orderedProducts = new List<OrderProduct>();
             orderedProducts.Add(new OrderProduct(products[0], 2));

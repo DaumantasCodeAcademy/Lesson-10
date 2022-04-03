@@ -10,11 +10,9 @@ namespace lesson_10
         static void Main(string[] args)
         {
             Console.WriteLine("Programa pasileidžia...");
-
+            Console.WriteLine();
             ProductRepository prodRep = new ProductRepository();
             List<Product> productsList = prodRep.Retrieve();
-            Console.WriteLine();
-            //Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Turimų prekių sąrašas:");
             Console.ResetColor();
