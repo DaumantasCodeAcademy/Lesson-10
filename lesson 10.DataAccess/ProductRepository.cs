@@ -5,9 +5,12 @@ namespace lesson_10.DataAccess
 {
     public class ProductRepository
     {
-        public List<Product> Retrieve()
+        private List<Product> products { get; }
+
+        public ProductRepository()
         {
-            List<Product> products = new List<Product>();
+            products = new List<Product>();
+
             products.Add(new Product("jautiena", "nuostabus produktas", 12.99m));
             products.Add(new Product("kede", "prastesnis produktas", 68.99m));
             products.Add(new Product("kamuolys", "brangus produktas", 201.99m));
@@ -15,7 +18,16 @@ namespace lesson_10.DataAccess
             products.Add(new Product("vynuoges", "skanus produktas", 7.99m));
             products.Add(new Product("duona", "pigus produktas", 3.99m));
 
+        }
+
+        public List<Product> Retrieve()
+        {
             return products;
+        }
+
+        public Product Retrieve(int productId)
+        {
+            return products[productId];
         }
     }
 }

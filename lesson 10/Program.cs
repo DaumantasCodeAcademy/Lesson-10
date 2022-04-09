@@ -19,7 +19,7 @@ namespace lesson_10
             Console.WriteLine();
             for (int i = 0; i < productsList.Count; i++)
             {
-                Console.Write($"{productsList[i].Name}, {productsList[i].Description}, {productsList[i].CurrentPrice}\r\n");
+                Console.Write($"- {productsList[i].Name}, {productsList[i].Description}, {productsList[i].CurrentPrice}\r\n");
             }
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("---------------------------------------");
@@ -27,25 +27,19 @@ namespace lesson_10
             //--------------------------------------------------------------------
             // sukurti nauja uzsakyma ir atvaizduoti jo informacija su produktais
             //--------------------------------------------------------------------
-            OrderRepository ordRep = new OrderRepository();
-            List<OrderProduct> orderedProducts = ordRep.Retrieve();
+            OrderRepository orderRepository = new OrderRepository();
+            //List<Order> order = orderRepository.Retrieve();
 
-            Order newOrder1 = new Order(DateTime.Now, "Miesto r., Kaimas km., Isgalvota g. 4", orderedProducts);
+            
 
-            Console.WriteLine($"Užsakymo data: {newOrder1.OrderDate}");
-            Console.WriteLine($"Užsakymo adresas: {newOrder1.ShippingAdress}");
-            Console.WriteLine($"Užsakyti produktai:");
-            for (int i = 0; i < orderedProducts.Count; i++)
-            {
-                Console.Write($"- {orderedProducts[i].Product.Name}, kiekis: {orderedProducts[i].Quantity}, kaina/vnt.: {orderedProducts[i].Product.CurrentPrice}, kaina/viso: {orderedProducts[i].Quantity * orderedProducts[i].Product.CurrentPrice}\r\n");
-            }
+
             Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("Viso mokėti: ");
             Console.ResetColor();
 
-            Console.WriteLine(ordRep.CountPrice());
+            //Console.WriteLine(ordRep.CountPrice());
             Console.WriteLine();
             Console.WriteLine("Programa pasibaigia...");
             Console.ReadLine();
