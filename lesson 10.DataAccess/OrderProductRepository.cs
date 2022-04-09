@@ -21,15 +21,15 @@ namespace lesson_10.DataAccess
             OrdersList.Add(uniqueOrder1);
 
             List<OrderProduct> uniqueOrder2 = new List<OrderProduct>();
-            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(1), 1));
-            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(2), 2));
-            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(3), 1));
+            uniqueOrder2.Add(new OrderProduct(ProductRepository.Retrieve(1), 1));
+            uniqueOrder2.Add(new OrderProduct(ProductRepository.Retrieve(2), 2));
+            uniqueOrder2.Add(new OrderProduct(ProductRepository.Retrieve(3), 1));
             OrdersList.Add(uniqueOrder2);
 
             List<OrderProduct> uniqueOrder3 = new List<OrderProduct>();
-            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(4), 2));
-            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(0), 1));
-            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(2), 4));
+            uniqueOrder3.Add(new OrderProduct(ProductRepository.Retrieve(4), 2));
+            uniqueOrder3.Add(new OrderProduct(ProductRepository.Retrieve(0), 1));
+            uniqueOrder3.Add(new OrderProduct(ProductRepository.Retrieve(2), 4));
             OrdersList.Add(uniqueOrder3);
         }
 

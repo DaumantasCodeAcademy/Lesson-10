@@ -33,22 +33,23 @@ namespace lesson_10
 
             OrderProductRepository orderProductRepository = new OrderProductRepository();
             List<List<OrderProduct>> listas = orderProductRepository.Retrieve();
+
+
             for (int i = 0; i < listas.Count; i++)
             {
-                Console.WriteLine($"Uzsakymo nr.{i+1} duomenys:");
+                Console.WriteLine($"  Uzsakymo nr.{i + 1} duomenys:");
                 for (int j = 0; j < listas[i].Count; j++)
                 {
-                    Console.WriteLine($"    Produktas: {listas[i][j].Product.Name}, Produkto aprašymas: {listas[i][j].Product.Description}, Produkto kaina/vnt.: {listas[i][j].Product.CurrentPrice}, Užsakytas kiekis: {listas[i][j].Quantity}");
+                    Console.WriteLine($"    Produktas: {listas[i][j].Product.Name}; Produkto aprašymas: {listas[i][j].Product.Description}; Produkto kaina/vnt.: {listas[i][j].Product.CurrentPrice}; Užsakytas kiekis: {listas[i][j].Quantity}.");
                 }
             }
 
             Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.Write("Viso mokėti: ");
+            Console.Write("Viso sumokėta: ");
             Console.ResetColor();
-
-            //Console.WriteLine(ordRep.CountPrice());
+            Console.WriteLine(orderRepository.CountPrice());
             Console.WriteLine();
             Console.WriteLine("Programa pasibaigia...");
             Console.ReadLine();
