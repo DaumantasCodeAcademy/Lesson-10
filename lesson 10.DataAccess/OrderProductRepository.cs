@@ -6,42 +6,46 @@ namespace lesson_10.DataAccess
 {
     public class OrderProductRepository
     {
-        public ProductRepository productRepository { get; }
-        public OrderRepository orderRepository { get; }
-        private List<List<OrderProduct>> ordersList { get; }
+        public ProductRepository ProductRepository { get; }
+        private List<List<OrderProduct>> OrdersList { get; }
 
         public OrderProductRepository()
         {
-            productRepository = new ProductRepository();
-            orderRepository = new OrderRepository();
-            ordersList = new List<List<OrderProduct>>();
+            ProductRepository = new ProductRepository();
+            OrdersList = new List<List<OrderProduct>>();
 
             List<OrderProduct> uniqueOrder1 = new List<OrderProduct>();
-            uniqueOrder1.Add(new OrderProduct(productRepository.Retrieve(0), 3));
-            uniqueOrder1.Add(new OrderProduct(productRepository.Retrieve(2), 1));
-            uniqueOrder1.Add(new OrderProduct(productRepository.Retrieve(4), 2));
-            ordersList.Add(uniqueOrder1);
+            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(0), 3));
+            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(2), 1));
+            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(4), 2));
+            OrdersList.Add(uniqueOrder1);
 
             List<OrderProduct> uniqueOrder2 = new List<OrderProduct>();
-            uniqueOrder1.Add(new OrderProduct(productRepository.Retrieve(1), 1));
-            uniqueOrder1.Add(new OrderProduct(productRepository.Retrieve(2), 2));
-            uniqueOrder1.Add(new OrderProduct(productRepository.Retrieve(3), 1));
-            ordersList.Add(uniqueOrder2);
+            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(1), 1));
+            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(2), 2));
+            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(3), 1));
+            OrdersList.Add(uniqueOrder2);
+
+            List<OrderProduct> uniqueOrder3 = new List<OrderProduct>();
+            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(4), 2));
+            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(0), 1));
+            uniqueOrder1.Add(new OrderProduct(ProductRepository.Retrieve(2), 4));
+            OrdersList.Add(uniqueOrder3);
         }
 
         public List<List<OrderProduct>> Retrieve()
         {
-            return ordersList;
+            return OrdersList;
         }
 
         public List<OrderProduct> Retrieve(int uniqueOrderListId)
         {
-            return ordersList[uniqueOrderListId];
+            return OrdersList[uniqueOrderListId];
         }
 
         public OrderProduct Retrieve(int uniqueOrderNumber, int orderedProductNumber)
         {
-            return ordersList[uniqueOrderNumber][orderedProductNumber];
+            return OrdersList[uniqueOrderNumber][orderedProductNumber];
         }
     }
 }

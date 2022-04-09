@@ -28,10 +28,19 @@ namespace lesson_10
             // sukurti nauja uzsakyma ir atvaizduoti jo informacija su produktais
             //--------------------------------------------------------------------
             OrderRepository orderRepository = new OrderRepository();
-            //List<Order> order = orderRepository.Retrieve();
+            List<Order> orders = orderRepository.Retrieve();
+            Console.WriteLine($"Viso uzsakymu rinkiniu: {orders.Count}");
 
-            
-
+            OrderProductRepository orderProductRepository = new OrderProductRepository();
+            List<List<OrderProduct>> listas = orderProductRepository.Retrieve();
+            for (int i = 0; i < listas.Count; i++)
+            {
+                Console.WriteLine($"Uzsakymo nr.{i+1} duomenys:");
+                for (int j = 0; j < listas[i].Count; j++)
+                {
+                    Console.WriteLine($"    Produktas: {listas[i][j].Product.Name}, Produkto aprašymas: {listas[i][j].Product.Description}, Produkto kaina/vnt.: {listas[i][j].Product.CurrentPrice}, Užsakytas kiekis: {listas[i][j].Quantity}");
+                }
+            }
 
             Console.WriteLine();
 

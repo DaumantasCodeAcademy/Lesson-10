@@ -6,25 +6,25 @@ namespace lesson_10.DataAccess
 {
     public class OrderRepository
     {
-        public OrderProductRepository ordProdRep { get; }
-        private List<Order> ordersList { get; }
+        public OrderProductRepository OrdProdRep { get; }
+        private List<Order> OrdersList { get; }
 
         public OrderRepository()
         {
-            ordProdRep = new OrderProductRepository();
-            ordersList = new List<Order>();
+            OrdProdRep = new OrderProductRepository();
+            OrdersList = new List<Order>();
 
-            ordersList.Add(new Order(DateTime.Now, "abc", ordProdRep.Retrieve()));
+            OrdersList.Add(new Order(DateTime.Now, "abc", OrdProdRep.Retrieve()));
         }
 
         public List<Order> Retrieve()
         {
-            return ordersList;
+            return OrdersList;
         }
 
         public Order Retrieve(int ordersListUniqueOrderId)
         {
-            return ordersList[ordersListUniqueOrderId];
+            return OrdersList[ordersListUniqueOrderId];
         }
     }
 }
