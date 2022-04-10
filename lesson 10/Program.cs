@@ -38,9 +38,10 @@ namespace lesson_10
             for (int i = 0; i < listas.Count; i++)
             {
                 Console.WriteLine($"  Uzsakymo nr.{i + 1} duomenys:");
+                Console.WriteLine($"    Uzsakymo data: {orders[0].OrderDate}, uzsakymo adresas: {orders[0].ShippingAdress}.");
                 for (int j = 0; j < listas[i].Count; j++)
                 {
-                    Console.WriteLine($"    Produktas: {listas[i][j].Product.Name}; Produkto aprašymas: {listas[i][j].Product.Description}; Produkto kaina/vnt.: {listas[i][j].Product.CurrentPrice}; Užsakytas kiekis: {listas[i][j].Quantity}.");
+                    Console.WriteLine($"      Produktas: {listas[i][j].Product.Name}; Produkto aprašymas: {listas[i][j].Product.Description}; Produkto kaina/vnt.: {listas[i][j].Product.CurrentPrice}; Užsakytas kiekis: {listas[i][j].Quantity}.");
                 }
             }
 
