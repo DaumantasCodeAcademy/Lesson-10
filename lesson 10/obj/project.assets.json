@@ -46,19 +46,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\Dainius\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\repos\\lesson 10\\lesson 10\\lesson 10.csproj",
+      "projectUniqueName": "E:\\Programming\\CodeAcademy\\Projektai\\10 lesson\\lesson-10\\lesson 10\\lesson 10.csproj",
       "projectName": "lesson 10",
-      "projectPath": "C:\\Users\\User\\Desktop\\repos\\lesson 10\\lesson 10\\lesson 10.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\repos\\lesson 10\\lesson 10\\obj\\",
+      "projectPath": "E:\\Programming\\CodeAcademy\\Projektai\\10 lesson\\lesson-10\\lesson 10\\lesson 10.csproj",
+      "packagesPath": "C:\\Users\\Dainius\\.nuget\\packages\\",
+      "outputPath": "E:\\Programming\\CodeAcademy\\Projektai\\10 lesson\\lesson-10\\lesson 10\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dainius\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -72,11 +72,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\repos\\lesson 10\\lesson 10.Business\\lesson 10.Business.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\repos\\lesson 10\\lesson 10.Business\\lesson 10.Business.csproj"
+            "E:\\Programming\\CodeAcademy\\Projektai\\10 lesson\\lesson-10\\lesson 10.Business\\lesson 10.Business.csproj": {
+              "projectPath": "E:\\Programming\\CodeAcademy\\Projektai\\10 lesson\\lesson-10\\lesson 10.Business\\lesson 10.Business.csproj"
             },
-            "C:\\Users\\User\\Desktop\\repos\\lesson 10\\lesson 10.DataAccess\\lesson 10.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\repos\\lesson 10\\lesson 10.DataAccess\\lesson 10.DataAccess.csproj"
+            "E:\\Programming\\CodeAcademy\\Projektai\\10 lesson\\lesson-10\\lesson 10.DataAccess\\lesson 10.DataAccess.csproj": {
+              "projectPath": "E:\\Programming\\CodeAcademy\\Projektai\\10 lesson\\lesson-10\\lesson 10.DataAccess\\lesson 10.DataAccess.csproj"
             }
           }
         }
@@ -105,7 +105,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

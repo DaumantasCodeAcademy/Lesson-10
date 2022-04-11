@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\repos\\lesson 10\\lesson 10.Business\\lesson 10.Business.csproj": {}
+    "E:\\Programming\\CodeAcademy\\Projektai\\10 lesson\\lesson-10\\lesson 10.Business\\lesson 10.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\repos\\lesson 10\\lesson 10.Business\\lesson 10.Business.csproj": {
+    "E:\\Programming\\CodeAcademy\\Projektai\\10 lesson\\lesson-10\\lesson 10.Business\\lesson 10.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\repos\\lesson 10\\lesson 10.Business\\lesson 10.Business.csproj",
+        "projectUniqueName": "E:\\Programming\\CodeAcademy\\Projektai\\10 lesson\\lesson-10\\lesson 10.Business\\lesson 10.Business.csproj",
         "projectName": "lesson 10.Business",
-        "projectPath": "C:\\Users\\User\\Desktop\\repos\\lesson 10\\lesson 10.Business\\lesson 10.Business.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\repos\\lesson 10\\lesson 10.Business\\obj\\",
+        "projectPath": "E:\\Programming\\CodeAcademy\\Projektai\\10 lesson\\lesson-10\\lesson 10.Business\\lesson 10.Business.csproj",
+        "packagesPath": "C:\\Users\\Dainius\\.nuget\\packages\\",
+        "outputPath": "E:\\Programming\\CodeAcademy\\Projektai\\10 lesson\\lesson-10\\lesson 10.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dainius\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
